@@ -1,0 +1,9 @@
+export { default as Hero } from "./Hero";
+export { default as AboutMe } from "./AboutMe";
+export { default as ProjectsContent } from "./ProjectsContent";
+export { default as SkillsContent } from "./SkillsContent";
+export { default as FeaturedProject } from "./FeaturedProject";
+export { default as TechFeatures } from "./TechFeatures";
+export { default as MoreProjects } from "./MoreProjects";
+export { default as TechStack } from "./TechStack";
+export { default as Contact } from "./Contact";
