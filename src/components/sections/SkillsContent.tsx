@@ -120,55 +120,46 @@ export default function SkillsContent() {
           </svg>
         );
       case "docker":
-        return <span className="text-xl">🐳</span>;
+        return (
+          <svg viewBox="0 0 64 64" className="w-7 h-7" aria-label="Docker logo">
+            <rect x="2" y="2" width="60" height="60" rx="14" fill="#0db7ed" />
+            <path d="M22 25h5v5h-5zm8 0h5v5h-5zm8 0h5v5h-5zm8 0h5v5h-5zm-16 8h5v5h-5zm8 0h5v5h-5zm8 0h5v5h-5zm-32 0h5v5h-5zm8-8h5v5h-5zm-8 16h5v5h-5zm8 0h5v5h-5zm8 0h5v5h-5zm8 0h5v5h-5zm8 0h5v5h-5z" fill="#fff" opacity="0.9"/>
+            <circle cx="47" cy="29" r="4" fill="#fff"/>
+          </svg>
+        );
       case "nginx":
         return (
-          <div className="w-6 h-6 rounded bg-emerald-700 flex items-center justify-center font-bold text-xs text-white">
-            N
-          </div>
+          <svg viewBox="0 0 64 64" className="w-7 h-7" aria-label="Nginx logo">
+            <rect x="2" y="2" width="60" height="60" rx="14" fill="#009639" />
+            <path d="M20 44V20l12 8 12-8v24L32 36l-12 8Zm10-10.5L24.5 26v11L30 38v-4.5Zm4 0V38l5.5-1.5V26L30 34.5Z" fill="#fff"/>
+          </svg>
         );
       case "git":
         return (
-          <div className="w-6 h-6 bg-orange-600 rounded flex items-center justify-center text-xs text-white font-bold">
-            git
-          </div>
-        );
-      case "github":
-        return <span className="text-xl">🐙</span>;
-      case "linux":
-        return <span className="text-xl">🐧</span>;
-      case "pm2":
-        return (
-          <div className="w-7 h-7 rounded bg-emerald-900 border border-emerald-500/40 flex items-center justify-center font-bold text-[10px] text-emerald-400">
-            PM2
-          </div>
-        );
-      case "jira":
-        return (
-          <svg viewBox="0 0 64 64" className="w-7 h-7" aria-label="Jira logo">
-            <rect x="2" y="2" width="60" height="60" rx="14" fill="#2684ff" />
-            <path
-              d="M20 18.5h18.4c7.8 0 14 6.2 14 14v1.6c0 7.8-6.2 14-14 14H28.5v-7.2h9.9c3.7 0 6.7-3 6.7-6.7v-.2c0-3.7-3-6.7-6.7-6.7H20v-5.7Z"
-              fill="#fff"
-            />
-            <path
-              d="M26.5 44.8h11.7c5.7 0 10.3-4.6 10.3-10.3v-.8H34c-3.7 0-6.7 3-6.7 6.7v4.4Z"
-              fill="#dfe6ff"
-              opacity="0.9"
-            />
-            <circle cx="22" cy="47" r="4.1" fill="#ffab00" />
+          <svg viewBox="0 0 64 64" className="w-7 h-7" aria-label="Git logo">
+            <rect x="2" y="2" width="60" height="60" rx="14" fill="#f05032" />
+            <path d="M32 17 20 29l12 12 12-12-12-12Zm0 8.5 4.2 4.2L32 34l-4.2-4.3L32 25.5Zm-7.5 12.8 4.3-4.3 3.2 3.2-4.3 4.2-3.2-3.1Zm15 0-3.1 3.1-4.3-4.2 3.2-3.2 4.2 4.3Z" fill="#fff"/>
           </svg>
         );
-      case "slack":
+      case "github":
         return (
-          <svg viewBox="0 0 64 64" className="w-7 h-7" aria-label="Slack logo">
-            <rect x="2" y="2" width="60" height="60" rx="14" fill="#4a154b" />
-            <g fill="#fff">
-              <path d="M26.5 18.5c-2.3 0-4.2 1.9-4.2 4.2 0 2.3 1.9 4.2 4.2 4.2h4.2v-4.2c0-2.3-1.9-4.2-4.2-4.2Zm0 10.8h-8.4c-2.3 0-4.2 1.9-4.2 4.2 0 2.3 1.9 4.2 4.2 4.2h8.4c2.3 0 4.2-1.9 4.2-4.2 0-2.3-1.9-4.2-4.2-4.2Z"/>
-              <path d="M45.5 18.5c0-2.3-1.9-4.2-4.2-4.2-2.3 0-4.2 1.9-4.2 4.2v4.2h4.2c2.3 0 4.2-1.9 4.2-4.2Zm-10.8 0v8.4c0 2.3 1.9 4.2 4.2 4.2 2.3 0 4.2-1.9 4.2-4.2v-8.4c0-2.3-1.9-4.2-4.2-4.2-2.3 0-4.2 1.9-4.2 4.2Z"/>
-              <path d="M18.5 37.5c-2.3 0-4.2 1.9-4.2 4.2 0 2.3 1.9 4.2 4.2 4.2h4.2v-4.2c0-2.3-1.9-4.2-4.2-4.2Zm0 10.8h-8.4c-2.3 0-4.2 1.9-4.2 4.2 0 2.3 1.9 4.2 4.2 4.2h8.4c2.3 0 4.2-1.9 4.2-4.2 0-2.3-1.9-4.2-4.2-4.2Z"/>
-              <path d="M45.5 37.5c0-2.3-1.9-4.2-4.2-4.2-2.3 0-4.2 1.9-4.2 4.2v4.2h4.2c2.3 0 4.2-1.9 4.2-4.2Zm-10.8 0v8.4c0 2.3 1.9 4.2 4.2 4.2 2.3 0 4.2-1.9 4.2-4.2v-8.4c0-2.3-1.9-4.2-4.2-4.2-2.3 0-4.2 1.9-4.2 4.2Z"/>
-            </g>
+          <svg viewBox="0 0 64 64" className="w-7 h-7" aria-label="GitHub logo">
+            <rect x="2" y="2" width="60" height="60" rx="14" fill="#181717" />
+            <path d="M32 18c-8 0-14.5 6.5-14.5 14.5 0 6.4 4.1 11.8 9.8 13.7.7.1.9-.3.9-.7v-2.4c-4 .9-4.9-1.7-4.9-1.7-.7-1.7-1.7-2.2-1.7-2.2-1.4-.9.1-.9.1-.9 1.5.1 2.3 1.5 2.3 1.5 1.3 2.3 3.5 1.7 4.4 1.3.1-.9.5-1.6.9-2-3.2-.4-6.5-1.6-6.5-7.2 0-1.6.6-2.9 1.5-3.9-.2-.4-.7-1.9.1-4 0 0 1.2-.4 4 1.5 1.1-.3 2.4-.5 3.7-.5 1.3 0 2.6.2 3.7.5 2.8-1.9 4-1.5 4-1.5.8 2.1.3 3.6.1 4 .9 1 .1 2.3.1 3.9 0 5.7-3.4 6.8-6.6 7.2.5.4.9 1.2.9 2.4v3.6c0 .4.2.8.9.7 5.7-1.9 9.8-7.3 9.8-13.7C46.5 24.5 40 18 32 18Z" fill="#fff"/>
+          </svg>
+        );
+      case "linux":
+        return (
+          <svg viewBox="0 0 64 64" className="w-7 h-7" aria-label="Linux logo">
+            <rect x="2" y="2" width="60" height="60" rx="14" fill="#FCC624" />
+            <path d="M32 18c-6.6 0-12 5.4-12 12 0 4.8 2.8 9 6.9 10.9V45h10.2v-4.1c4.1-1.8 6.9-6.1 6.9-10.9 0-6.6-5.4-12-12-12Zm0 5.6c3.5 0 6.4 2.9 6.4 6.4s-2.9 6.4-6.4 6.4-6.4-2.9-6.4-6.4 2.9-6.4 6.4-6.4ZM17 48h30v4H17z" fill="#000" opacity="0.9"/>
+          </svg>
+        );
+      case "pm2":
+        return (
+          <svg viewBox="0 0 64 64" className="w-7 h-7" aria-label="PM2 logo">
+            <rect x="2" y="2" width="60" height="60" rx="14" fill="#1f9d55" />
+            <path d="M18 42V22h7l9 9 9-9h7v20h-6V30l-10 10-10-10v12h-6Z" fill="#fff"/>
           </svg>
         );
       case "figma":

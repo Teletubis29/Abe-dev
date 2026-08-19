@@ -66,9 +66,9 @@ export default function ContactContent() {
   };
 
   return (
-    <div className="pt-28 pb-20 overflow-hidden">
-      <div className="absolute top-20 right-10 h-[500px] w-[500px] rounded-full bg-[#e5a93c]/5 blur-[140px] pointer-events-none -z-10" />
-      <div className="absolute top-1/2 left-10 h-[400px] w-[400px] rounded-full bg-neutral-800/10 blur-[120px] pointer-events-none -z-10" />
+    <div className="relative pt-28 pb-20 overflow-x-hidden">
+      <div className="pointer-events-none absolute -right-8 top-20 h-[220px] w-[220px] rounded-full bg-[#e5a93c]/5 blur-[100px] sm:h-[500px] sm:w-[500px] sm:blur-[140px] -z-10" />
+      <div className="pointer-events-none absolute -left-10 top-1/2 h-[220px] w-[220px] rounded-full bg-neutral-800/10 blur-[100px] sm:h-[400px] sm:w-[400px] sm:blur-[120px] -z-10" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <nav aria-label="Breadcrumb" className="mb-3 flex items-center gap-2 text-xs font-medium">

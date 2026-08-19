@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { SectionHeader, Card } from "@/components/ui";
 import { techCategories, experiences } from "@/data/portfolio";
+import { renderSkillIcon } from "@/lib/skill-icons";
 
 export default function TechStack() {
   const [activeCategory, setActiveCategory] = useState("Frontend");
@@ -50,9 +51,9 @@ export default function TechStack() {
                   key={skill.name}
                   className="flex flex-col items-center justify-center p-4 rounded-xl bg-[#0f1115] border border-neutral-800/80 hover:border-[#e5a93c]/40 hover:bg-[#151921] transition-all duration-300 group aspect-square text-center"
                 >
-                  <span className="text-2xl mb-2 group-hover:scale-110 transition-transform duration-300">
-                    {skill.icon}
-                  </span>
+                  <div className="mb-2 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    {renderSkillIcon(skill.iconKey)}
+                  </div>
                   <span className="text-neutral-400 text-xs font-medium group-hover:text-neutral-200 transition-colors">
                     {skill.name}
                   </span>

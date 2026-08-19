@@ -11,7 +11,8 @@ export interface SocialLink {
 
 export interface TechIcon {
   name: string;
-  icon: string;
+  icon?: string;
+  iconKey?: string;
 }
 
 export interface ProjectDetail {
@@ -44,7 +45,7 @@ export interface TechFeature {
 
 export interface TechSkill {
   name: string;
-  icon: string;
+  iconKey: string;
 }
 
 export interface TechCategory {

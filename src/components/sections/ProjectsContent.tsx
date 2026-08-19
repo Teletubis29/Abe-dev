@@ -29,10 +29,10 @@ export default function ProjectsContent() {
   };
 
   return (
-    <div className="pt-28 pb-20 overflow-hidden">
+    <div className="relative pt-28 pb-20 overflow-x-hidden">
       {/* Background ambient lighting */}
-      <div className="absolute top-20 right-10 w-[500px] h-[500px] bg-[#e5a93c]/5 rounded-full blur-[140px] pointer-events-none -z-10" />
-      <div className="absolute top-1/2 left-10 w-[400px] h-[400px] bg-neutral-800/10 rounded-full blur-[120px] pointer-events-none -z-10" />
+      <div className="pointer-events-none absolute -right-8 top-20 h-[220px] w-[220px] rounded-full bg-[#e5a93c]/5 blur-[100px] sm:h-[500px] sm:w-[500px] sm:blur-[140px] -z-10" />
+      <div className="pointer-events-none absolute -left-10 top-1/2 h-[220px] w-[220px] rounded-full bg-neutral-800/10 blur-[100px] sm:h-[400px] sm:w-[400px] sm:blur-[120px] -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}

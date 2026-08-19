@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { heroTechStack } from "@/data/portfolio";
+import { renderSkillIcon } from "@/lib/skill-icons";
 
 export default function Hero() {
   return (
@@ -78,10 +79,10 @@ export default function Hero() {
                 {heroTechStack.map((tech) => (
                   <div
                     key={tech.name}
-                    className="w-10 h-10 rounded-xl bg-[#12151b] border border-neutral-800 flex items-center justify-center text-base hover:border-[#e5a93c]/50 hover:bg-[#181d25] transition-all duration-200 cursor-default"
+                    className="w-10 h-10 rounded-xl bg-[#12151b] border border-neutral-800 flex items-center justify-center hover:border-[#e5a93c]/50 hover:bg-[#181d25] transition-all duration-200 cursor-default"
                     title={tech.name}
                   >
-                    <span>{tech.icon}</span>
+                    {tech.iconKey ? renderSkillIcon(tech.iconKey) : <span>{tech.icon}</span>}
                   </div>
                 ))}
               </div>
